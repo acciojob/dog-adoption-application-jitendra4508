@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 	<!-- the entire body must be written by student -->
+
+	<style>
+		.form-group{margin-bottom: 15px;}
+	</style>
+	
+	<form>
+       <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="tel">Phone Number</label>
+            <input type="tel" id="tel" name="tel" placeholder="Phone Number">
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="address" id="address"  placeholder="address"/>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">
+                    Have you ever lived with a Dog before?
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <select class="multiSelect" aria-label="Default select example">
+                <option selected>Please select your preferred breeds</option>
+                <option value="1">Rodweiler</option>
+                <option value="2">Pitbull</option>
+                <option value="3">Labrador</option>
+            </select>    
+        </div>        
+        <div class="form-btn">
+            <input type="submit" id="submit" value="Submit" />
+        </div>
+    </form>
+
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
 </body>
-
 </html>
